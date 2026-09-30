@@ -1,0 +1,29 @@
+{
+  "algorithm": "supervised",
+  "artifact_schema": 2,
+  "batch_size": 16,
+  "bootstrap_samples": 200,
+  "dataset": "iris_petal_width",
+  "diagnostic_samples": 8,
+  "encoding": "visual",
+  "epochs": 40,
+  "graph": "2 Data/3 Processed/visual_mb.npz",
+  "learning_rate": 0.03,
+  "min_epochs": 40,
+  "model": {
+    "dt": 0.5,
+    "dynamics": "lif",
+    "input_amplitude": 4,
+    "leak": 1,
+    "steps": 48,
+    "temperature": 0.02,
+    "temporal_readout": true,
+    "threshold": 0.1,
+    "tonic_current": 0.5
+  },
+  "name": "iris_petal_width_lif_t01_a4_s48",
+  "patience": 41,
+  "plastic_scope": "all",
+  "seed": 0,
+  "select_checkpoint": "best_validation"
+}

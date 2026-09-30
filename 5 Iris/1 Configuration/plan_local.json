@@ -1,0 +1,341 @@
+{
+  "artifact_schema": 2,
+  "bootstrap_samples": 1000,
+  "families": [
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_base_trained.json",
+      "name": "iris_local_visual_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_base_zero_lr.json",
+      "name": "iris_local_visual_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_base_no_reward.json",
+      "name": "iris_local_visual_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_base_shuffled_reward.json",
+      "name": "iris_local_visual_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_direct_base_trained.json",
+      "name": "iris_local_direct_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_direct_base_zero_lr.json",
+      "name": "iris_local_direct_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_direct_base_no_reward.json",
+      "name": "iris_local_direct_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_direct_base_shuffled_reward.json",
+      "name": "iris_local_direct_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_strong_trained.json",
+      "name": "iris_local_visual_strong_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_strong_zero_lr.json",
+      "name": "iris_local_visual_strong_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_strong_no_reward.json",
+      "name": "iris_local_visual_strong_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_strong_shuffled_reward.json",
+      "name": "iris_local_visual_strong_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_exploration_trained.json",
+      "name": "iris_local_visual_exploration_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_exploration_zero_lr.json",
+      "name": "iris_local_visual_exploration_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_exploration_no_reward.json",
+      "name": "iris_local_visual_exploration_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_local_visual_exploration_shuffled_reward.json",
+      "name": "iris_local_visual_exploration_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_base_trained.json",
+      "name": "iris_sepal_length_local_visual_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_base_zero_lr.json",
+      "name": "iris_sepal_length_local_visual_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_base_no_reward.json",
+      "name": "iris_sepal_length_local_visual_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_base_shuffled_reward.json",
+      "name": "iris_sepal_length_local_visual_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_direct_base_trained.json",
+      "name": "iris_sepal_length_local_direct_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_direct_base_zero_lr.json",
+      "name": "iris_sepal_length_local_direct_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_direct_base_no_reward.json",
+      "name": "iris_sepal_length_local_direct_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_direct_base_shuffled_reward.json",
+      "name": "iris_sepal_length_local_direct_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_strong_trained.json",
+      "name": "iris_sepal_length_local_visual_strong_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_strong_zero_lr.json",
+      "name": "iris_sepal_length_local_visual_strong_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_strong_no_reward.json",
+      "name": "iris_sepal_length_local_visual_strong_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_strong_shuffled_reward.json",
+      "name": "iris_sepal_length_local_visual_strong_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_exploration_trained.json",
+      "name": "iris_sepal_length_local_visual_exploration_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_exploration_zero_lr.json",
+      "name": "iris_sepal_length_local_visual_exploration_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_exploration_no_reward.json",
+      "name": "iris_sepal_length_local_visual_exploration_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_length_local_visual_exploration_shuffled_reward.json",
+      "name": "iris_sepal_length_local_visual_exploration_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_base_trained.json",
+      "name": "iris_sepal_width_local_visual_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_base_zero_lr.json",
+      "name": "iris_sepal_width_local_visual_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_base_no_reward.json",
+      "name": "iris_sepal_width_local_visual_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_base_shuffled_reward.json",
+      "name": "iris_sepal_width_local_visual_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_direct_base_trained.json",
+      "name": "iris_sepal_width_local_direct_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_direct_base_zero_lr.json",
+      "name": "iris_sepal_width_local_direct_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_direct_base_no_reward.json",
+      "name": "iris_sepal_width_local_direct_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_direct_base_shuffled_reward.json",
+      "name": "iris_sepal_width_local_direct_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_strong_trained.json",
+      "name": "iris_sepal_width_local_visual_strong_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_strong_zero_lr.json",
+      "name": "iris_sepal_width_local_visual_strong_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_strong_no_reward.json",
+      "name": "iris_sepal_width_local_visual_strong_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_strong_shuffled_reward.json",
+      "name": "iris_sepal_width_local_visual_strong_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_exploration_trained.json",
+      "name": "iris_sepal_width_local_visual_exploration_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_exploration_zero_lr.json",
+      "name": "iris_sepal_width_local_visual_exploration_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_exploration_no_reward.json",
+      "name": "iris_sepal_width_local_visual_exploration_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_sepal_width_local_visual_exploration_shuffled_reward.json",
+      "name": "iris_sepal_width_local_visual_exploration_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_base_trained.json",
+      "name": "iris_petal_length_local_visual_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_base_zero_lr.json",
+      "name": "iris_petal_length_local_visual_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_base_no_reward.json",
+      "name": "iris_petal_length_local_visual_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_base_shuffled_reward.json",
+      "name": "iris_petal_length_local_visual_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_direct_base_trained.json",
+      "name": "iris_petal_length_local_direct_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_direct_base_zero_lr.json",
+      "name": "iris_petal_length_local_direct_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_direct_base_no_reward.json",
+      "name": "iris_petal_length_local_direct_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_direct_base_shuffled_reward.json",
+      "name": "iris_petal_length_local_direct_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_strong_trained.json",
+      "name": "iris_petal_length_local_visual_strong_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_strong_zero_lr.json",
+      "name": "iris_petal_length_local_visual_strong_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_strong_no_reward.json",
+      "name": "iris_petal_length_local_visual_strong_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_strong_shuffled_reward.json",
+      "name": "iris_petal_length_local_visual_strong_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_exploration_trained.json",
+      "name": "iris_petal_length_local_visual_exploration_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_exploration_zero_lr.json",
+      "name": "iris_petal_length_local_visual_exploration_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_exploration_no_reward.json",
+      "name": "iris_petal_length_local_visual_exploration_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_length_local_visual_exploration_shuffled_reward.json",
+      "name": "iris_petal_length_local_visual_exploration_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_base_trained.json",
+      "name": "iris_petal_width_local_visual_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_base_zero_lr.json",
+      "name": "iris_petal_width_local_visual_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_base_no_reward.json",
+      "name": "iris_petal_width_local_visual_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_base_shuffled_reward.json",
+      "name": "iris_petal_width_local_visual_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_direct_base_trained.json",
+      "name": "iris_petal_width_local_direct_base_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_direct_base_zero_lr.json",
+      "name": "iris_petal_width_local_direct_base_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_direct_base_no_reward.json",
+      "name": "iris_petal_width_local_direct_base_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_direct_base_shuffled_reward.json",
+      "name": "iris_petal_width_local_direct_base_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_strong_trained.json",
+      "name": "iris_petal_width_local_visual_strong_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_strong_zero_lr.json",
+      "name": "iris_petal_width_local_visual_strong_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_strong_no_reward.json",
+      "name": "iris_petal_width_local_visual_strong_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_strong_shuffled_reward.json",
+      "name": "iris_petal_width_local_visual_strong_shuffled_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_exploration_trained.json",
+      "name": "iris_petal_width_local_visual_exploration_trained"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_exploration_zero_lr.json",
+      "name": "iris_petal_width_local_visual_exploration_zero_lr"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_exploration_no_reward.json",
+      "name": "iris_petal_width_local_visual_exploration_no_reward"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/local/iris_petal_width_local_visual_exploration_shuffled_reward.json",
+      "name": "iris_petal_width_local_visual_exploration_shuffled_reward"
+    }
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "name": "iris_local",
+  "optimization_seeds": [
+    0
+  ],
+  "selection": "best validation only, initial state included; never select configurations on outer test",
+  "split_seeds": [
+    1729
+  ]
+}

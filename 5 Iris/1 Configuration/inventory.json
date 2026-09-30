@@ -1,0 +1,102 @@
+{
+  "artifact_schema": 2,
+  "default_task_configs": [
+    "5 Iris/1 Configuration/tasks/iris.json",
+    "5 Iris/1 Configuration/tasks/iris_sepal_length.json",
+    "5 Iris/1 Configuration/tasks/iris_sepal_width.json",
+    "5 Iris/1 Configuration/tasks/iris_petal_length.json",
+    "5 Iris/1 Configuration/tasks/iris_petal_width.json"
+  ],
+  "learned_interface_parameters": 0,
+  "n_recipe_configurations": 240,
+  "notes": [
+    "Every epoch saves train and validation metrics; test is evaluated at initialization and selected/end-control states.",
+    "600-epoch regressions allow patience 60 only after epoch 200.",
+    "All other budgets run every epoch and select best validation checkpoint.",
+    "Topology controls load cached derived graphs; no second rewire is applied.",
+    "Null observed fits intentionally duplicate the identical core40 procedure.",
+    "Transfer phases share one untouched within-Iris domain test and source-only scalers."
+  ],
+  "permutations": 199,
+  "plans": {
+    "controls": {
+      "n_families": 10,
+      "n_runs": 50,
+      "path": "5 Iris/1 Configuration/plan_controls.json",
+      "plan_sha256": "c0231ceda3c3c81c1f9ebae17dfe40275ceff60c3770197e63b239bb3e67a7c0"
+    },
+    "core": {
+      "n_families": 48,
+      "n_runs": 510,
+      "path": "5 Iris/1 Configuration/plan_core.json",
+      "plan_sha256": "f471a6aadbf62ef4bcc5456eb4047a93b41a233d7a378d39e5e03402085bf033"
+    },
+    "full": {
+      "n_families": 12,
+      "n_runs": 120,
+      "path": "5 Iris/1 Configuration/plan_full.json",
+      "plan_sha256": "7e1e1e852d4ba806704ebc704d384aae1014204757644c8263f2900bd88d7073"
+    },
+    "lif": {
+      "n_families": 50,
+      "n_runs": 250,
+      "path": "5 Iris/1 Configuration/plan_lif.json",
+      "plan_sha256": "7c4613d5ace1490dd4f5f69f71927efabf723ef32ac86c9450b52a96318f37c7"
+    },
+    "local": {
+      "n_families": 80,
+      "n_runs": 400,
+      "path": "5 Iris/1 Configuration/plan_local.json",
+      "plan_sha256": "86047cf73e397ef927764c6d875d242774ca68d92600f801d159501ecd881ef6"
+    },
+    "null": {
+      "n_families": 1000,
+      "n_runs": 5000,
+      "path": "5 Iris/1 Configuration/plan_null.json",
+      "plan_sha256": "85fe448e43b872568f69263fb86418594c4d47c044ed4593fd81606dfbfd6570"
+    },
+    "transfer": {
+      "n_families": 30,
+      "n_runs": 60,
+      "path": "5 Iris/1 Configuration/plan_transfer.json",
+      "plan_sha256": "50cad7ed983a57f982d4fc8639ced0b5ce1bf8533a5577365a74d6767def9e8f"
+    }
+  },
+  "task_scope": "Iris only",
+  "tasks": [
+    {
+      "dataset": "iris",
+      "holdout_feature": "sepal_length",
+      "name": "iris",
+      "task": "classification"
+    },
+    {
+      "dataset": "iris_sepal_length",
+      "holdout_feature": "sepal_width",
+      "name": "iris_sepal_length",
+      "task": "regression"
+    },
+    {
+      "dataset": "iris_sepal_width",
+      "holdout_feature": "sepal_length",
+      "name": "iris_sepal_width",
+      "task": "regression"
+    },
+    {
+      "dataset": "iris_petal_length",
+      "holdout_feature": "sepal_length",
+      "name": "iris_petal_length",
+      "task": "regression"
+    },
+    {
+      "dataset": "iris_petal_width",
+      "holdout_feature": "sepal_length",
+      "name": "iris_petal_width",
+      "task": "regression"
+    }
+  ],
+  "total_runs": 6390,
+  "trainable_predictor_parameters": [
+    "gain"
+  ]
+}

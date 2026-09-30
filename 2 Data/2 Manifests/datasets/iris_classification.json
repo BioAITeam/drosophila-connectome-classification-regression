@@ -1,0 +1,6 @@
+{
+  "name": "iris",
+  "source": "iris",
+  "task": "classification",
+  "target": "species"
+}

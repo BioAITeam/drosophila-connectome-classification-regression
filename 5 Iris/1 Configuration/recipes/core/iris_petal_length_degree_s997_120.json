@@ -1,0 +1,28 @@
+{
+  "algorithm": "supervised",
+  "artifact_schema": 2,
+  "batch_size": 16,
+  "bootstrap_samples": 200,
+  "dataset": "iris_petal_length",
+  "diagnostic_samples": 8,
+  "encoding": "visual",
+  "epochs": 120,
+  "graph": "2 Data/3 Processed/visual_mb_degree_s997.npz",
+  "learning_rate": 0.03,
+  "min_epochs": 120,
+  "model": {
+    "dt": 0.5,
+    "dynamics": "rate",
+    "input_amplitude": 2,
+    "leak": 1,
+    "steps": 24,
+    "temperature": 0.02
+  },
+  "name": "iris_petal_length_degree_s997_120",
+  "patience": 121,
+  "plastic_scope": "all",
+  "rewire_mode": "degree",
+  "seed": 0,
+  "select_checkpoint": "best_validation",
+  "topology_seed": 997
+}

@@ -1,0 +1,6 @@
+{
+  "name": "iris_sepal_width",
+  "source": "iris",
+  "task": "regression",
+  "target": "sepal_width"
+}

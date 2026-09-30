@@ -1,0 +1,221 @@
+{
+  "artifact_schema": 2,
+  "bootstrap_samples": 1000,
+  "families": [
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t01_a2_s24.json",
+      "name": "iris_lif_t01_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t01_a2_s48.json",
+      "name": "iris_lif_t01_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t01_a4_s24.json",
+      "name": "iris_lif_t01_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t01_a4_s48.json",
+      "name": "iris_lif_t01_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t05_a2_s24.json",
+      "name": "iris_lif_t05_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t05_a2_s48.json",
+      "name": "iris_lif_t05_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t05_a4_s24.json",
+      "name": "iris_lif_t05_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_t05_a4_s48.json",
+      "name": "iris_lif_t05_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_nominal_visual.json",
+      "name": "iris_lif_nominal_visual"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_lif_nominal_direct.json",
+      "name": "iris_lif_nominal_direct"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t01_a2_s24.json",
+      "name": "iris_sepal_length_lif_t01_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t01_a2_s48.json",
+      "name": "iris_sepal_length_lif_t01_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t01_a4_s24.json",
+      "name": "iris_sepal_length_lif_t01_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t01_a4_s48.json",
+      "name": "iris_sepal_length_lif_t01_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t05_a2_s24.json",
+      "name": "iris_sepal_length_lif_t05_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t05_a2_s48.json",
+      "name": "iris_sepal_length_lif_t05_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t05_a4_s24.json",
+      "name": "iris_sepal_length_lif_t05_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_t05_a4_s48.json",
+      "name": "iris_sepal_length_lif_t05_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_nominal_visual.json",
+      "name": "iris_sepal_length_lif_nominal_visual"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_length_lif_nominal_direct.json",
+      "name": "iris_sepal_length_lif_nominal_direct"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t01_a2_s24.json",
+      "name": "iris_sepal_width_lif_t01_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t01_a2_s48.json",
+      "name": "iris_sepal_width_lif_t01_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t01_a4_s24.json",
+      "name": "iris_sepal_width_lif_t01_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t01_a4_s48.json",
+      "name": "iris_sepal_width_lif_t01_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t05_a2_s24.json",
+      "name": "iris_sepal_width_lif_t05_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t05_a2_s48.json",
+      "name": "iris_sepal_width_lif_t05_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t05_a4_s24.json",
+      "name": "iris_sepal_width_lif_t05_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_t05_a4_s48.json",
+      "name": "iris_sepal_width_lif_t05_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_nominal_visual.json",
+      "name": "iris_sepal_width_lif_nominal_visual"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_sepal_width_lif_nominal_direct.json",
+      "name": "iris_sepal_width_lif_nominal_direct"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t01_a2_s24.json",
+      "name": "iris_petal_length_lif_t01_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t01_a2_s48.json",
+      "name": "iris_petal_length_lif_t01_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t01_a4_s24.json",
+      "name": "iris_petal_length_lif_t01_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t01_a4_s48.json",
+      "name": "iris_petal_length_lif_t01_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t05_a2_s24.json",
+      "name": "iris_petal_length_lif_t05_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t05_a2_s48.json",
+      "name": "iris_petal_length_lif_t05_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t05_a4_s24.json",
+      "name": "iris_petal_length_lif_t05_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_t05_a4_s48.json",
+      "name": "iris_petal_length_lif_t05_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_nominal_visual.json",
+      "name": "iris_petal_length_lif_nominal_visual"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_length_lif_nominal_direct.json",
+      "name": "iris_petal_length_lif_nominal_direct"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t01_a2_s24.json",
+      "name": "iris_petal_width_lif_t01_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t01_a2_s48.json",
+      "name": "iris_petal_width_lif_t01_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t01_a4_s24.json",
+      "name": "iris_petal_width_lif_t01_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t01_a4_s48.json",
+      "name": "iris_petal_width_lif_t01_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t05_a2_s24.json",
+      "name": "iris_petal_width_lif_t05_a2_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t05_a2_s48.json",
+      "name": "iris_petal_width_lif_t05_a2_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t05_a4_s24.json",
+      "name": "iris_petal_width_lif_t05_a4_s24"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_t05_a4_s48.json",
+      "name": "iris_petal_width_lif_t05_a4_s48"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_nominal_visual.json",
+      "name": "iris_petal_width_lif_nominal_visual"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/lif/iris_petal_width_lif_nominal_direct.json",
+      "name": "iris_petal_width_lif_nominal_direct"
+    }
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "name": "iris_lif",
+  "optimization_seeds": [
+    0
+  ],
+  "selection": "best validation only, initial state included; never select configurations on outer test",
+  "split_seeds": [
+    1729
+  ]
+}

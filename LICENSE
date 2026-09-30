@@ -1,0 +1,67 @@
+Noncommercial Research and Education License
+Version 1.0
+
+Copyright (c) 2026 the repository contributors.
+
+1. Scope and permission
+
+This license applies to the original code, documentation, and research artifacts
+released by this project, including its companion Zenodo deposit (collectively,
+the "Materials"), to the extent that the contributors hold the relevant rights.
+Original research artifacts include learned connectome synaptic gains,
+project-authored checkpoint contents, fitted preprocessing parameters,
+prediction files, evaluation summaries, and figures. Third-party content within
+or accompanying these artifacts is governed by Section 5.
+
+Permission is granted, without charge, to use, copy, modify, and redistribute
+the Materials solely for noncommercial research or educational purposes,
+subject to the conditions below.
+
+2. Noncommercial use
+
+Noncommercial use means use that is not primarily intended for commercial
+advantage or monetary compensation. Commercial use, including incorporation
+into commercial products or services, is not permitted under this license and
+requires separate written permission from the relevant copyright holders.
+
+3. Required citation
+
+Any publication, report, presentation, teaching material, or other publicly
+shared work that uses the Materials or results obtained with them must cite:
+
+Harold Brayan Arteaga-Arteaga, Mario Alejandro Bravo-Ortíz, Pablo Guillen-Rondon, Reinel Tabares-Soto. Supervised Learning Through Synaptic Adaptation in a Drosophila Connectome Model for Classification and Regression. 2026.
+
+Use the final published bibliographic details and DOI when available.
+Citation does not waive the noncommercial-use restriction.
+
+4. Redistribution and modifications
+
+Copies or redistributions of the Materials, including modified versions, must
+retain this license, the copyright notice, and the citation requirement.
+Modifications must be identified, and no endorsement by the original authors
+may be implied. Recipients remain subject to the conditions of this license
+for the original Materials and their incorporated portions.
+
+5. Third-party materials and data
+
+This license does not grant rights to third-party libraries, datasets,
+pretrained feature-extractor weights, or other third-party materials. These
+include the original connectome exports, histopathology images and annotations,
+and frozen ViT weights. Their applicable source licenses and terms remain in
+effect, including for any rights in data-derived artifacts to which they apply.
+
+When an artifact combines original project content with third-party content,
+this license covers the original project content to the extent stated in
+Section 1. Use or redistribution must also comply with the applicable
+third-party terms and retain their required notices. This license does not
+replace or override those terms or create exclusive rights in facts or
+public-domain content.
+
+6. Disclaimer
+
+The Materials are provided "as is", without warranties of any kind, to the extent
+permitted by applicable law. To that extent, the copyright holders are not
+liable for claims or damages arising from use of the Materials. Nothing in this
+license limits rights or exceptions that cannot be restricted by applicable law.
+
+All rights not expressly granted are reserved.

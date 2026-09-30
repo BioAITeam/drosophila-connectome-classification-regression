@@ -1,0 +1,6 @@
+{
+  "name": "iris_sepal_length",
+  "source": "iris",
+  "task": "regression",
+  "target": "sepal_length"
+}

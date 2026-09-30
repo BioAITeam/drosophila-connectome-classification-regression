@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "datasets": {
+    "joint": {}
+  },
+  "representations": [
+    "dinov2",
+    "phikonv2"
+  ],
+  "vit_models": {
+    "dinov2": {
+      "repo_id": "facebook/dinov2-base",
+      "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415"
+    },
+    "phikonv2": {
+      "repo_id": "owkin/phikon-v2",
+      "revision": "2ae989a9c40cffaa27f0a6cb29cc94d1d6f9a5fd"
+    }
+  },
+  "extraction_batch_size": 16,
+  "graphs": [
+    "anatomical",
+    "degree241"
+  ],
+  "tasks": [
+    "multiclass"
+  ],
+  "seeds": [
+    1729,
+    2718,
+    3141
+  ],
+  "training": {
+    "learning_rate": 0.03,
+    "gradient_clip": 1.0,
+    "batch_size": 16,
+    "microbatch_size": 16,
+    "classification_epochs": 120,
+    "regression_epochs": 600,
+    "regression_min_epochs": 200,
+    "regression_patience": 60,
+    "min_delta": 1e-08,
+    "dwell_steps": 4,
+    "checkpoint_blocks": 32,
+    "dt": 0.5,
+    "leak": 1.0,
+    "input_amplitude": 2.0,
+    "temperature": 0.02
+  },
+  "runtime": {
+    "gpu_indices": [
+      0
+    ],
+    "status_interval_seconds": 3600,
+    "heartbeat_seconds": 15,
+    "threads_per_worker": 4
+  },
+  "empty_annotation_pi": 0.0,
+  "selection": {
+    "classification": "validation_balanced_accuracy",
+    "regression": "validation_mae_raw"
+  },
+  "joint": {
+    "source_output": "6 Ki67/5 Outputs",
+    "datasets": [
+      "bcdata",
+      "shid"
+    ]
+  },
+  "output_root": "6 Ki67/6 Workspace/joint-reproduction"
+}

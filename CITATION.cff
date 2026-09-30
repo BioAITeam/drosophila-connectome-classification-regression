@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this research software."
+type: software
+repository-code: "https://github.com/BioAITeam/drosophila-connectome-classification-regression"
+title: "Supervised Learning Through Synaptic Adaptation in a Drosophila Connectome Model for Classification and Regression"
+authors:
+  - family-names: "Arteaga-Arteaga"
+    given-names: "Harold Brayan"
+  - family-names: "Bravo-Ortíz"
+    given-names: "Mario Alejandro"
+  - family-names: "Guillen-Rondon"
+    given-names: "Pablo"
+  - family-names: "Tabares-Soto"
+    given-names: "Reinel"
+abstract: "Code for supervised learning through internal synaptic-gain adaptation in a MaleCNS Drosophila connectome model with fixed input and output interfaces. Experiments cover Iris classification and regression, and Ki-67 histopathology classification through BRAP-Net with a frozen vision transformer."
+keywords:
+  - connectomics
+  - Drosophila melanogaster
+  - synaptic weight adaptation
+  - classification
+  - regression

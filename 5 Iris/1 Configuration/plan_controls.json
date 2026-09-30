@@ -1,0 +1,61 @@
+{
+  "artifact_schema": 2,
+  "bootstrap_samples": 1000,
+  "families": [
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_frozen_40.json",
+      "name": "iris_frozen_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_fixed_train_labels_40.json",
+      "name": "iris_fixed_train_labels_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_sepal_length_frozen_40.json",
+      "name": "iris_sepal_length_frozen_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_sepal_length_fixed_train_labels_40.json",
+      "name": "iris_sepal_length_fixed_train_labels_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_sepal_width_frozen_40.json",
+      "name": "iris_sepal_width_frozen_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_sepal_width_fixed_train_labels_40.json",
+      "name": "iris_sepal_width_fixed_train_labels_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_petal_length_frozen_40.json",
+      "name": "iris_petal_length_frozen_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_petal_length_fixed_train_labels_40.json",
+      "name": "iris_petal_length_fixed_train_labels_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_petal_width_frozen_40.json",
+      "name": "iris_petal_width_frozen_40"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/controls/iris_petal_width_fixed_train_labels_40.json",
+      "name": "iris_petal_width_fixed_train_labels_40"
+    }
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "name": "iris_controls",
+  "optimization_seeds": [
+    0
+  ],
+  "selection": "best validation only, initial state included; never select configurations on outer test",
+  "split_seeds": [
+    1729
+  ]
+}

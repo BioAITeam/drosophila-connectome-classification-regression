@@ -1,0 +1,6 @@
+{
+  "name": "iris_petal_width",
+  "source": "iris",
+  "task": "regression",
+  "target": "petal_width"
+}

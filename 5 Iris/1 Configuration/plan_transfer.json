@@ -1,0 +1,348 @@
+{
+  "analysis": "transfer",
+  "artifact_schema": 2,
+  "bootstrap_samples": 1000,
+  "families": [
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_transfer_lower_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_transfer_lower_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_transfer_lower_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_transfer_lower_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_transfer_lower_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_transfer_lower_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_transfer_upper_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_transfer_upper_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_transfer_upper_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_transfer_upper_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_transfer_upper_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_transfer_upper_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_length_transfer_lower_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_length_transfer_lower_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_length_transfer_lower_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_length_transfer_lower_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_length_transfer_lower_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_length_transfer_lower_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_length_transfer_upper_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_length_transfer_upper_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_length_transfer_upper_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_length_transfer_upper_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_length_transfer_upper_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_length_transfer_upper_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_width_transfer_lower_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_width_transfer_lower_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_width_transfer_lower_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_width_transfer_lower_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_width_transfer_lower_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_width_transfer_lower_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_width_transfer_upper_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_width_transfer_upper_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_width_transfer_upper_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_width_transfer_upper_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_sepal_width_transfer_upper_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_sepal_width_transfer_upper_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_length_transfer_lower_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_length_transfer_lower_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_length_transfer_lower_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_length_transfer_lower_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_length_transfer_lower_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_length_transfer_lower_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_length_transfer_upper_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_length_transfer_upper_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_length_transfer_upper_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_length_transfer_upper_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_length_transfer_upper_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_length_transfer_upper_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_width_transfer_lower_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_width_transfer_lower_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_width_transfer_lower_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_width_transfer_lower_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_width_transfer_lower_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_width_transfer_lower_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_width_transfer_upper_source.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_width_transfer_upper_source",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_width_transfer_upper_adapt.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_width_transfer_upper_adapt",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/transfer/iris_petal_width_transfer_upper_reset.json",
+      "folds": [
+        0
+      ],
+      "name": "iris_petal_width_transfer_upper_reset",
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    }
+  ],
+  "folds": [
+    0
+  ],
+  "name": "iris_transfer",
+  "optimization_seeds": [
+    0
+  ],
+  "selection": "best source or adaptation validation only; common untouched target-domain test",
+  "split_seeds": [
+    1729
+  ]
+}

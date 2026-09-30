@@ -1,0 +1,12 @@
+# Direct dependencies observed in the validated Python 3.12.13 environment.
+# This records the tested stack; it is not a lock of all transitive packages.
+# The experiment used torch 2.2.2+cu121. Install the appropriate PyTorch
+# CPU/CUDA wheel first; the base-version pin below accepts its local suffix.
+numpy==1.26.4
+scipy==1.17.1
+pandas==2.3.3
+pyarrow==17.0.0
+scikit-learn==1.7.2
+torch==2.2.2
+requests==2.34.2
+matplotlib==3.11.0

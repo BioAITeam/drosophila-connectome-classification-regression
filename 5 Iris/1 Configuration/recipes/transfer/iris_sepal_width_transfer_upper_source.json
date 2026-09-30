@@ -1,0 +1,38 @@
+{
+  "algorithm": "supervised",
+  "artifact_schema": 2,
+  "batch_size": 16,
+  "bootstrap_samples": 200,
+  "dataset": "iris_sepal_width",
+  "diagnostic_samples": 8,
+  "encoding": "visual",
+  "epochs": 120,
+  "graph": "2 Data/3 Processed/visual_mb.npz",
+  "learning_rate": 0.03,
+  "min_epochs": 120,
+  "model": {
+    "dt": 0.5,
+    "dynamics": "rate",
+    "input_amplitude": 2,
+    "leak": 1,
+    "steps": 24,
+    "temperature": 0.02
+  },
+  "name": "iris_sepal_width_transfer_upper_source",
+  "patience": 121,
+  "plastic_scope": "all",
+  "seed": 0,
+  "select_checkpoint": "best_validation",
+  "split_spec": {
+    "feature": "sepal_length",
+    "kind": "feature_quantile_transfer",
+    "phase": "source",
+    "quantile": 0.5,
+    "tail": "upper"
+  },
+  "transfer_domain": "upper",
+  "transfer_phase": "source",
+  "transfer_role": "source",
+  "transfer_tail": "upper",
+  "transfer_task": "iris_sepal_width"
+}

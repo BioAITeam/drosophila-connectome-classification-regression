@@ -1,0 +1,357 @@
+{
+  "artifact_schema": 2,
+  "bootstrap_samples": 1000,
+  "families": [
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_anatomical_40.json",
+      "name": "iris_anatomical_40",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_anatomical_120.json",
+      "name": "iris_anatomical_120",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_degree_s137_120.json",
+      "name": "iris_degree_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_degree_s241_120.json",
+      "name": "iris_degree_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_degree_s997_120.json",
+      "name": "iris_degree_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_restricted_s137_120.json",
+      "name": "iris_restricted_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_restricted_s241_120.json",
+      "name": "iris_restricted_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_restricted_s997_120.json",
+      "name": "iris_restricted_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_anatomical_40.json",
+      "name": "iris_sepal_length_anatomical_40",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_anatomical_120.json",
+      "name": "iris_sepal_length_anatomical_120",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_anatomical_200.json",
+      "name": "iris_sepal_length_anatomical_200",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_anatomical_600.json",
+      "name": "iris_sepal_length_anatomical_600",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_degree_s137_120.json",
+      "name": "iris_sepal_length_degree_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_degree_s241_120.json",
+      "name": "iris_sepal_length_degree_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_degree_s997_120.json",
+      "name": "iris_sepal_length_degree_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_restricted_s137_120.json",
+      "name": "iris_sepal_length_restricted_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_restricted_s241_120.json",
+      "name": "iris_sepal_length_restricted_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_length_restricted_s997_120.json",
+      "name": "iris_sepal_length_restricted_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_anatomical_40.json",
+      "name": "iris_sepal_width_anatomical_40",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_anatomical_120.json",
+      "name": "iris_sepal_width_anatomical_120",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_anatomical_200.json",
+      "name": "iris_sepal_width_anatomical_200",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_anatomical_600.json",
+      "name": "iris_sepal_width_anatomical_600",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_degree_s137_120.json",
+      "name": "iris_sepal_width_degree_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_degree_s241_120.json",
+      "name": "iris_sepal_width_degree_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_degree_s997_120.json",
+      "name": "iris_sepal_width_degree_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_restricted_s137_120.json",
+      "name": "iris_sepal_width_restricted_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_restricted_s241_120.json",
+      "name": "iris_sepal_width_restricted_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_sepal_width_restricted_s997_120.json",
+      "name": "iris_sepal_width_restricted_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_anatomical_40.json",
+      "name": "iris_petal_length_anatomical_40",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_anatomical_120.json",
+      "name": "iris_petal_length_anatomical_120",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_anatomical_200.json",
+      "name": "iris_petal_length_anatomical_200",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_anatomical_600.json",
+      "name": "iris_petal_length_anatomical_600",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_degree_s137_120.json",
+      "name": "iris_petal_length_degree_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_degree_s241_120.json",
+      "name": "iris_petal_length_degree_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_degree_s997_120.json",
+      "name": "iris_petal_length_degree_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_restricted_s137_120.json",
+      "name": "iris_petal_length_restricted_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_restricted_s241_120.json",
+      "name": "iris_petal_length_restricted_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_length_restricted_s997_120.json",
+      "name": "iris_petal_length_restricted_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_anatomical_40.json",
+      "name": "iris_petal_width_anatomical_40",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_anatomical_120.json",
+      "name": "iris_petal_width_anatomical_120",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_anatomical_200.json",
+      "name": "iris_petal_width_anatomical_200",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_anatomical_600.json",
+      "name": "iris_petal_width_anatomical_600",
+      "optimization_seeds": [
+        0,
+        1
+      ],
+      "split_seeds": [
+        1729,
+        2718
+      ]
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_degree_s137_120.json",
+      "name": "iris_petal_width_degree_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_degree_s241_120.json",
+      "name": "iris_petal_width_degree_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_degree_s997_120.json",
+      "name": "iris_petal_width_degree_s997_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_restricted_s137_120.json",
+      "name": "iris_petal_width_restricted_s137_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_restricted_s241_120.json",
+      "name": "iris_petal_width_restricted_s241_120"
+    },
+    {
+      "config": "5 Iris/1 Configuration/recipes/core/iris_petal_width_restricted_s997_120.json",
+      "name": "iris_petal_width_restricted_s997_120"
+    }
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "name": "iris_core",
+  "optimization_seeds": [
+    0
+  ],
+  "selection": "best validation only, initial state included; never select configurations on outer test",
+  "split_seeds": [
+    1729
+  ]
+}

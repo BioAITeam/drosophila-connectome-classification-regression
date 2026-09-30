@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+.env
+.env.*
+*.part
+
+/2 Data/1 Raw/**
+!/2 Data/1 Raw/**/
+!/2 Data/1 Raw/README.md
+!/2 Data/1 Raw/**/.gitkeep
+/2 Data/3 Processed
+/5 Iris/5 Outputs
+/6 Ki67/5 Outputs
+/5 Iris/6 Workspace/
+/6 Ki67/6 Workspace/
+/7 Paper Results/2 Outputs/
+/zenodo/
+/9 temp_intermediate/
+/10 temp/
+
+/*.zip
+/*.rar
+/*.tar
+/*.tar.gz

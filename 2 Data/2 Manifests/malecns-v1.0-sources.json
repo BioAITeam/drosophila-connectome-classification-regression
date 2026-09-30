@@ -1,0 +1,48 @@
+{
+  "dataset": "MaleCNS",
+  "version": "v1.0",
+  "synapse_confidence_min": 0.5,
+  "official_catalog": "https://male-cns.janelia.org/download/",
+  "license": "CC-BY-4.0",
+  "files": {
+    "annotations": {
+      "path": "2 Data/1 Raw/malecns-v1.0/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "filename": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "bytes": 14483314,
+      "verified_utc": "2026-09-13T05:07:22.898526+00:00",
+      "content_length": 14483314,
+      "server_md5_base64": "UKdxh3DFciDxYLpPQxq4ng==",
+      "etag": "\"50a7718770c57220f160ba4f431ab89e\"",
+      "generation": "1780494878811468",
+      "last_modified": "Wed, 03 Jun 2026 13:54:38 GMT"
+    },
+    "neurotransmitters": {
+      "path": "2 Data/1 Raw/malecns-v1.0/body-neurotransmitters-male-cns-v1.0.feather",
+      "filename": "body-neurotransmitters-male-cns-v1.0.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "bytes": 43282834,
+      "verified_utc": "2026-09-13T05:07:26.274481+00:00",
+      "content_length": 43282834,
+      "server_md5_base64": "PYQrEv5cSe763lKNfdJKHw==",
+      "etag": "\"3d842b12fe5c49eefade528d7dd24a1f\"",
+      "generation": "1780894899156750",
+      "last_modified": "Mon, 08 Jun 2026 05:01:39 GMT"
+    },
+    "weights": {
+      "path": "2 Data/1 Raw/malecns-v1.0/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "filename": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "bytes": 1051241946,
+      "verified_utc": "2026-09-13T05:08:15.655809+00:00",
+      "content_length": 1051241946,
+      "server_md5_base64": "8w6dzKJc/QIb8eez2XVZng==",
+      "etag": "\"f30e9dcca25cfd021bf1e7b3d975599e\"",
+      "generation": "1780494887545976",
+      "last_modified": "Wed, 03 Jun 2026 13:54:47 GMT"
+    }
+  }
+}

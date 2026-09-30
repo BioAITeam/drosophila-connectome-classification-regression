@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "malecns-learning"
+version = "0.1.0"
+description = "Reproducible internal-learning experiments on the MaleCNS connectome"
+readme = "README.md"
+license = "LicenseRef-Noncommercial-Research-and-Education-1.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26,<2",
+    "scipy",
+    "pandas",
+    "pyarrow",
+    "scikit-learn",
+    "torch>=2.2,<3",
+    "requests",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+vision = [
+    "transformers>=4.49,<4.50",
+    "Pillow>=10,<13",
+    "huggingface-hub>=0.26,<1",
+    "safetensors>=0.4,<1",
+]
+
+[project.scripts]
+flybrain = "flybrain.launcher:main"
+
+[tool.setuptools]
+packages = ["flybrain", "ki67"]
+
+[tool.setuptools.package-dir]
+flybrain = "3 Connectome/flybrain"
+ki67 = "6 Ki67/2 Source"
+

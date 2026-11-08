@@ -61,7 +61,7 @@ def main() -> None:
     args = parser.parse_args()
     destination = prepare_destination(args.destination or default_destination("binary-table"))
     source_hash = sha256(args.summary)
-    (destination / "table-4.tex").write_text(render(args.summary))
+    (destination / "table-6.tex").write_text(render(args.summary))
     save_json(destination / "provenance.json", {
         "summary": portable_path(args.summary), "sha256": source_hash,
         "generator": portable_path(__file__), "layout": "dataset spans four model rows; three columns per threshold",

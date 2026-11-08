@@ -25,6 +25,8 @@ The [inference guide](<3 Inference/README.md>) provides BRAP-Net commands for on
 
 Use the [paper reproduction command](<../7 Paper Results/README.md>) for the final figures and tables. The [artifact map](<4 Documentation/manuscript_confusion_matrices.md>) explains individual panels and their saved inputs.
 
+The [classification analysis](<4 Documentation/classification_analysis.md>) reconstructs Tables 6-7, class prevalence, class-specific metrics, image-bootstrap intervals and validation-fitted temperature scaling from archived predictions and logits.
+
 To recompute a campaign summary in a new directory:
 
 ```bash
@@ -36,6 +38,19 @@ To recompute a campaign summary in a new directory:
 
 ## 4. Train
 
-The [data-format guide](<4 Documentation/data_format.md>) defines image–annotation pairs, original partitions, targets and configurable dataset locations.
+The [data-format guide](<4 Documentation/data_format.md>) defines image-annotation pairs, original partitions, targets and configurable dataset locations.
 
 Follow the [training protocol](<4 Documentation/protocol.md>) for campaign scope, checkpoint selection, preparation and launch. Use [joint training](<4 Documentation/joint_training.md>) for pooled BCData and SHIDC-B-Ki-67 experiments.
+
+## 5. Additional experiments
+
+| Guide | Reproduction scope |
+| --- | --- |
+| [SHIDC-B-Ki-67-V2](<4 Documentation/shid_v2.md>) | Patient-disjoint partition, joint training and separate classification |
+| [Cross-dataset evaluation](<4 Documentation/cross_dataset.md>) | Frozen Phikon-v2 anatomical models tested on another dataset |
+| [Traditional machine learning](<4 Documentation/ml_baselines.md>) | Fourteen classifiers, validation-based grid search and three-seed evaluation |
+| [Phikon-v2 fine-tuning](<4 Documentation/phikon_finetuning.md>) | Joint binary models, three-class SHIDC-B-Ki-67 models, parameter counts and timings |
+| [Visual-feature assignments](<4 Documentation/feature_mapping.md>) | Ten random permutations and the original Phikon-v2 assignment |
+| [Local explanations](<4 Documentation/phikon_xai.md>) | Grad-CAM, SHAP and LIME for the fine-tuned anatomical model |
+
+Each guide separates reconstruction from saved results, prediction with selected weights and new training. Raw images are required for partition creation and fine-tuning.

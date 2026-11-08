@@ -10,13 +10,13 @@ Choose the data required by your workflow. All paths start at the repository roo
 | Retrain Iris | Iris from scikit-learn and restored graphs from Zenodo |
 | Retrain joint Ki-67 from archived ViT features | Zenodo artifacts; see [joint training](<../6 Ki67/4 Documentation/joint_training.md>) |
 | Rebuild connectome graphs | Original MaleCNS exports; see the [raw-data guide](<1 Raw/README.md>) |
-| Retrain Ki-67 from images or evaluate original images | Prepared BCData and SHIDC-B-Ki-67 image–annotation pairs |
+| Retrain Ki-67 from images or evaluate original images | Prepared BCData and SHIDC-B-Ki-67 image-annotation pairs |
 
 ## Locations
 
 | Folder | Contents |
 | --- | --- |
-| `2 Data/1 Raw/` | MaleCNS source exports and prepared Ki-67 image–annotation datasets |
+| `2 Data/1 Raw/` | MaleCNS source exports and prepared Ki-67 image-annotation datasets |
 | `2 Data/2 Manifests/` | Source URLs, checksums and dataset specifications |
 | `2 Data/3 Processed/` | Restored prepared graphs and provenance sidecars, read-only |
 
@@ -27,3 +27,5 @@ Follow the [raw-data guide](<1 Raw/README.md>) for download sources, Ki-67 prepa
 Iris is loaded through scikit-learn. Five [dataset specifications](<2 Manifests/datasets/>) define species classification and prediction of each floral measurement from the other three.
 
 The [Ki-67 data contract](<../6 Ki67/4 Documentation/data_format.md>) defines annotation fields and label thresholds. Retain the study's recorded split membership for reproduction.
+
+To construct SHIDC-B-Ki-67-V2 from the existing SHIDC-B-Ki-67 image-annotation pairs, follow the [patient-disjoint partition guide](<../6 Ki67/4 Documentation/shid_v2.md>). The script writes the new partitions under `2 Data/1 Raw/ki67/shid_v2/`, which is ignored by Git.

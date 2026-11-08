@@ -4,96 +4,96 @@
   "figures": [
     {
       "number": 1,
-      "pdf_path": "zenodo/payload/outputs/paper-results/revision-20260914T043414Z/Figure-1.pdf",
-      "sha256": "c984b6b41d940e89a9451d8054a09e71c85bc8d9417a90a01cb9beb2d6b9a284",
-      "png_path": "zenodo/payload/outputs/paper-results/revision-20260914T043414Z/Figure-1.png",
-      "generator": "7 Paper Results/1 Generators/condensed_figures.py",
-      "provenance_path": "zenodo/payload/outputs/paper-results/revision-20260914T043414Z/revision-manifest.json",
-      "provenance_sha256": "5467759333026cb07bf12a01ff4f1b05ac9ce04b3f2cc4ac87ed6b1d435486ed",
-      "archived_generator": "revision_panels.py"
+      "pdf_path": "zenodo/payload/outputs/paper-schematic/Figure-1.pdf",
+      "sha256": "084d3087c1aa819d4c0e31ee929d38c5d69c2b6b29bb3907934fc723613fe69b",
+      "png_path": "zenodo/payload/outputs/paper-schematic/Figure-1.png",
+      "generator": "7 Paper Results/1 Generators/schematic/build_schematic.py"
     },
     {
       "number": 2,
-      "pdf_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-2.pdf",
-      "sha256": "3dc9eaa8e5d485810026e73884dfbc0fcd8d4ada7713c74c0b40cf6caf01cbf2",
-      "png_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-2.png",
-      "generator": "7 Paper Results/1 Generators/condensed_figures.py",
-      "provenance_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/provenance.json",
-      "provenance_sha256": "234eb12bcaa76c088addc08dcff8cb06e8ecb17eb1ebc59897eee1df17723013"
+      "pdf_path": "zenodo/payload/outputs/paper-results/revision-20260914T043414Z/Figure-1.pdf",
+      "sha256": "c984b6b41d940e89a9451d8054a09e71c85bc8d9417a90a01cb9beb2d6b9a284",
+      "png_path": "zenodo/payload/outputs/paper-results/revision-20260914T043414Z/Figure-1.png",
+      "generator": "7 Paper Results/1 Generators/condensed_figures.py"
     },
     {
       "number": 3,
-      "pdf_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-3.pdf",
-      "sha256": "f6dee26d80eaf526cbc40eff3b45c0779ed890bb9e6f2b9ded353f3e896b76a4",
-      "png_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-3.png",
-      "generator": "7 Paper Results/1 Generators/condensed_figures.py",
-      "provenance_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/provenance.json",
-      "provenance_sha256": "234eb12bcaa76c088addc08dcff8cb06e8ecb17eb1ebc59897eee1df17723013"
+      "pdf_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-2.pdf",
+      "sha256": "3dc9eaa8e5d485810026e73884dfbc0fcd8d4ada7713c74c0b40cf6caf01cbf2",
+      "png_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-2.png",
+      "generator": "7 Paper Results/1 Generators/condensed_figures.py"
     },
     {
       "number": 4,
-      "pdf_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-4.pdf",
-      "sha256": "6183b7d2dd873d33dc1f6c68123357562f1a01742e9b9ca72a7ec6f0c105947c",
-      "png_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-4.png",
-      "generator": "7 Paper Results/1 Generators/condensed_figures.py",
-      "provenance_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/provenance.json",
-      "provenance_sha256": "234eb12bcaa76c088addc08dcff8cb06e8ecb17eb1ebc59897eee1df17723013"
+      "pdf_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-3.pdf",
+      "sha256": "f6dee26d80eaf526cbc40eff3b45c0779ed890bb9e6f2b9ded353f3e896b76a4",
+      "png_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-3.png",
+      "generator": "7 Paper Results/1 Generators/condensed_figures.py"
     },
     {
       "number": 5,
-      "pdf_path": "zenodo/payload/outputs/paper-results/figure5-horizontal-20260923T153039Z/Figure-5.pdf",
-      "sha256": "09479bd2deabeba24ad8b70b2aec37da547df667ea5757d9ddf588bda0f55635",
-      "png_path": "zenodo/payload/outputs/paper-results/figure5-horizontal-20260923T153039Z/Figure-5.png",
-      "generator": "7 Paper Results/1 Generators/condensed_figures.py",
-      "provenance_path": "zenodo/payload/outputs/paper-results/figure5-horizontal-20260923T153039Z/provenance.json",
-      "provenance_sha256": "f0b27e8fc65320bbc844b0e4dd9489a3dc1bd9893f835019d3ca9a01fbe868af"
+      "pdf_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-4.pdf",
+      "sha256": "6183b7d2dd873d33dc1f6c68123357562f1a01742e9b9ca72a7ec6f0c105947c",
+      "png_path": "zenodo/payload/outputs/paper-condensed/20260915T014412Z/figures/Figure-4.png",
+      "generator": "7 Paper Results/1 Generators/condensed_figures.py"
     },
     {
       "number": 6,
-      "pdf_path": "zenodo/payload/outputs/paper-results/figure6-horizontal-20260923T163745Z/Figure-6.pdf",
-      "sha256": "315c89c7459f8d40f80ccb71861d3ef6797af6f4fac54f1fb9ed067ab70202d1",
-      "png_path": "zenodo/payload/outputs/paper-results/figure6-horizontal-20260923T163745Z/Figure-6.png",
-      "generator": "7 Paper Results/1 Generators/condensed_figures.py",
-      "provenance_path": "zenodo/payload/outputs/paper-results/figure6-horizontal-20260923T163745Z/provenance.json",
-      "provenance_sha256": "6284a4bef7027a0b0b189a772f8f4740cdbef32c228a5538fd090f3aedd8dc26"
+      "pdf_path": "zenodo/payload/outputs/paper-results/figure5-horizontal-20260923T153039Z/Figure-5.pdf",
+      "sha256": "09479bd2deabeba24ad8b70b2aec37da547df667ea5757d9ddf588bda0f55635",
+      "png_path": "zenodo/payload/outputs/paper-results/figure5-horizontal-20260923T153039Z/Figure-5.png",
+      "generator": "7 Paper Results/1 Generators/condensed_figures.py"
     },
     {
       "number": 7,
-      "pdf_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-7.pdf",
-      "sha256": "33b4225ba49ec19745b3102083f23821ec3d427bc051c3eba0bbe55c33e74d9e",
-      "png_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-7.png",
-      "generator": "6 Ki67/2 Source/paper_joint.py",
-      "provenance_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/provenance.json",
-      "provenance_sha256": "5fd591b3e842932279b58dc7c2c6a3ed363f1312cd446bf5e1efbb0da32c8fce"
+      "pdf_path": "zenodo/payload/outputs/paper-results/figure6-horizontal-20260923T163745Z/Figure-6.pdf",
+      "sha256": "315c89c7459f8d40f80ccb71861d3ef6797af6f4fac54f1fb9ed067ab70202d1",
+      "png_path": "zenodo/payload/outputs/paper-results/figure6-horizontal-20260923T163745Z/Figure-6.png",
+      "generator": "7 Paper Results/1 Generators/condensed_figures.py"
     },
     {
       "number": 8,
-      "pdf_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-8.pdf",
-      "sha256": "eee580ecf2cb3e3965855c0a8bb96bbd93e81219d1ff77fa9e6adedd67834cfe",
-      "png_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-8.png",
-      "generator": "6 Ki67/2 Source/paper_joint.py",
-      "provenance_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/provenance.json",
-      "provenance_sha256": "5fd591b3e842932279b58dc7c2c6a3ed363f1312cd446bf5e1efbb0da32c8fce"
+      "pdf_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-7.pdf",
+      "sha256": "33b4225ba49ec19745b3102083f23821ec3d427bc051c3eba0bbe55c33e74d9e",
+      "png_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-7.png",
+      "generator": "6 Ki67/2 Source/paper_joint.py"
     },
     {
       "number": 9,
-      "pdf_path": "zenodo/payload/ki67/outputs/paper-binary-confusions-combined-20260923T221619Z-v2/Figure-9.pdf",
-      "sha256": "a1f75d06bc8f8d8638444fa745dee902fd2fbfe1f04473f8ce5db407e83ee6d6",
-      "png_path": "zenodo/payload/ki67/outputs/paper-binary-confusions-combined-20260923T221619Z-v2/Figure-9.png",
-      "generator": "6 Ki67/2 Source/paper_binary_confusions.py",
-      "provenance_path": "zenodo/payload/ki67/outputs/paper-binary-confusions-combined-20260923T221619Z-v2/provenance.json",
-      "provenance_sha256": "d8eea760537431d052710957be7433f2e713275fe605c0e35f31a6937ea3063b"
+      "pdf_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-8.pdf",
+      "sha256": "eee580ecf2cb3e3965855c0a8bb96bbd93e81219d1ff77fa9e6adedd67834cfe",
+      "png_path": "zenodo/payload/ki67/outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-8.png",
+      "generator": "6 Ki67/2 Source/paper_joint.py"
     },
     {
       "number": 10,
+      "pdf_path": "zenodo/payload/ki67/outputs/paper-binary-confusions-combined-20260923T221619Z-v2/Figure-9.pdf",
+      "sha256": "a1f75d06bc8f8d8638444fa745dee902fd2fbfe1f04473f8ce5db407e83ee6d6",
+      "png_path": "zenodo/payload/ki67/outputs/paper-binary-confusions-combined-20260923T221619Z-v2/Figure-9.png",
+      "generator": "6 Ki67/2 Source/paper_binary_confusions.py"
+    },
+    {
+      "number": 11,
       "pdf_path": "zenodo/payload/ki67/outputs/paper-rgb-both-datasets-20260924T141711Z-v2/Figure-10.pdf",
       "sha256": "d18fa2603138f66e1dde4eaf8b1afa9b8a1daa4bdf0afe1c8ea83a04318a9dfa",
       "png_path": "zenodo/payload/ki67/outputs/paper-rgb-both-datasets-20260924T141711Z-v2/Figure-10.png",
-      "generator": "6 Ki67/2 Source/paper_rgb.py",
-      "provenance_path": "zenodo/payload/ki67/outputs/paper-rgb-both-datasets-20260924T141711Z-v2/provenance.json",
-      "provenance_sha256": "6be216eb08f43f27cfd651e6a4a59d77a91e754cfe0dc21fea785a35a2970971"
+      "generator": "6 Ki67/2 Source/paper_rgb.py"
+    },
+    {
+      "number": 12,
+      "pdf_path": "zenodo/payload/ki67/outputs/phikon-joint-finetune/figures/Figure-12.pdf",
+      "sha256": "8095ec703b13f78485d77901e5eec486069e3d477b425ed6bbdfa4fd0bdff67b",
+      "png_path": "zenodo/payload/ki67/outputs/phikon-joint-finetune/figures/Figure-12.png",
+      "generator": "6 Ki67/2 Source/phikon_finetuning/render_confusions.py"
+    },
+    {
+      "number": 13,
+      "pdf_path": "zenodo/payload/ki67/outputs/phikon-xai/figures/Figure-13.pdf",
+      "sha256": "036a1b991c1e73cadf05074e18771aa7dc93ba4a13aa2d726c20667ab7f0f0a5",
+      "png_path": "zenodo/payload/ki67/outputs/phikon-xai/figures/Figure-13.png",
+      "generator": "6 Ki67/2 Source/phikon_xai/render.py"
     }
   ],
   "matched_supplied_paper_pdfs": true,
-  "note": "Archived PDFs retain the accepted edition; generators rebuild numerical content without training."
+  "note": "Archived PDFs match the final manuscript. Some campaign source filenames retain historical numbering."
 }

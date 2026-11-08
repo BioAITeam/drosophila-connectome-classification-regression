@@ -9,11 +9,11 @@ From the repository root, create an environment and install the recorded direct 
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r "1 Environment/vision-validated.txt" -e '.[vision]'
+python -m pip install -r "1 Environment/vision-validated.txt" -e '.[vision,ml,xai]'
 ./run.sh --help
 ```
 
-The `vision` extra includes the frozen image-extractor dependencies. Repeat the editable installation if the checkout is moved.
+The `vision` extra includes image-encoder dependencies. The `xai` extra provides SHAP, LIME and image segmentation. Figure 1 export requires `rsvg-convert` (librsvg). The `ml` extra installs the additional traditional-classifier dependencies. For exact ML model replay, also install the versions in [`requirements.txt`](<../6 Ki67/2 Source/ml_baselines/requirements.txt>). The additional Iris classifier campaign records a separate [requirements file](<../5 Iris/2 Execution/topology_controls/requirements.txt>). Use a separate environment with those versions for exact Iris model replay. Numerical table reconstruction reads saved results and does not require loading classifier weights. Repeat the editable installation if the checkout is moved.
 
 `./run.sh` launches connectome and Iris commands; `"6 Ki67/run.sh"` launches Ki-67 commands.
 

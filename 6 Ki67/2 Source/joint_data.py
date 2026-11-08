@@ -91,6 +91,7 @@ def _verify_snapshot(source: Path, representation: str, model: dict,
 
 def _load_sources(config: dict, output: Path) -> tuple[dict, dict, dict, dict]:
     joint = config["joint"]
+    policy = data.partition_policy(joint)
     source = resolve_output_reference(joint["source_output"])
     datasets = joint.get("datasets", ["bcdata", "shid"])
     representations = config["representations"]
@@ -209,6 +210,8 @@ def _load_sources(config: dict, output: Path) -> tuple[dict, dict, dict, dict]:
                "representations": representations, "graphs": graph_names,
                "expected_split_counts": expected_counts, "source_sha256": observed,
                "source_manifests": source_manifests}
+    if "partition_policy" in joint:
+        context["partition_policy"] = policy
     return context, pooled, loaded_features, graph_files
 
 
@@ -241,7 +244,7 @@ def prepare(config: dict, output: Path) -> dict:
         rows = [row for split in data.SPLITS for row in pooled[split]]
         manifest = {"schema_version": 1, "dataset": "joint", "source_root": context["source_output"],
                     "source_datasets": context["datasets"], "class_names": data.CLASS_NAMES,
-                    "rows": rows, "summary": data._summary(rows),
+                    "rows": rows, "summary": data._summary(rows, data.partition_policy(context)),
                     "source_manifests": context["source_manifests"],
                     "row_order": "split order train/val/test, configured source dataset order, original source split order",
                     "source_signature": signature}

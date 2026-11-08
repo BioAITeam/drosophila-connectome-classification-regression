@@ -125,7 +125,7 @@ def retry_aware_timing(history: list[dict], complete: dict, np: Any) -> dict:
     training_rows = [row for row in history if row.get("optimization_loss") is not None]
     for row in training_rows:
         retained[row["epoch"]] = row
-    require(sorted(retained) == list(range(1, 121)), "Completed RGB run must cover trained epochs 1–120")
+    require(sorted(retained) == list(range(1, 121)), "Completed RGB run must cover trained epochs 1-120")
     durations = [retained[epoch]["epoch_seconds"] for epoch in range(1, 121)]
     attempts = []
     for attempt in sorted({r["attempt"] for r in history}):
@@ -474,11 +474,11 @@ def native_rgb_caption(datasets: tuple[str, ...]) -> str:
                 "Cells give mean image counts above mean within-class percentages across three seeds on the same "
                 "402 BCData and 700 SHIDC-B-Ki-67 test images. Counts may be fractional. "
                 "Each dataset has separately fitted gains. Rows are true classes; columns are predictions. "
-                "Int. denotes Intermediate. All panels share the 0--100\\% color scale.")
+                "Int. denotes Intermediate. All panels share the 0 to 100\\% color scale.")
     return ("BCData native-RGB anatomical test confusion matrices at initialization (A) and validation-selected checkpoints (B). "
             "Cells give mean image counts above mean within-class percentages across three seeds on the same 402 test images. "
             "Counts may be fractional. The arrow links initialization to the validation-selected checkpoint. "
-            "Rows are true classes; columns are predictions. Int. denotes Intermediate. Both panels share the 0--100\\% color scale.")
+            "Rows are true classes; columns are predictions. Int. denotes Intermediate. Both panels share the 0 to 100\\% color scale.")
 
 
 def generate(outputs: Path, destination: Path, datasets: tuple[str, ...] = ("bcdata",),
@@ -496,7 +496,6 @@ def generate(outputs: Path, destination: Path, datasets: tuple[str, ...] = ("bcd
     destination = prepare_destination(destination)
     os.environ["CUDA_VISIBLE_DEVICES"] = ""
     configure_plot_cache()
-    os.environ["FONTCONFIG_FILE"] = "/etc/fonts/fonts.conf"
     import numpy as np
     import sklearn
 
@@ -533,7 +532,7 @@ def generate(outputs: Path, destination: Path, datasets: tuple[str, ...] = ("bcd
     csv_write(destination / "per_run.csv", flat)
     csv_write(destination / "grouped.csv", [{k: v for k, v in row.items() if k != "selected_epoch_by_seed"} for row in groups])
     timing_summary = {"definitions": {
-        "retained_epoch": "The last archived training occurrence of each scheduled epoch 1–120. All evaluation-only rows (optimization_loss is null), including resumed-checkpoint reevaluations at positive epochs, are excluded.",
+        "retained_epoch": "The last archived training occurrence of each scheduled epoch 1-120. All evaluation-only rows (optimization_loss is null), including resumed-checkpoint reevaluations at positive epochs, are excluded.",
         "all_recorded_completed_epochs": "Sum of epoch_seconds for all archived history rows, including initialization, evaluation-only resumed-checkpoint rows, and repeated epochs across attempts. Excludes work interrupted before a history record and gaps between attempts.",
         "all_recorded_training_epochs": "Sum of epoch_seconds only for rows with non-null optimization_loss, including repeated training epochs across attempts. This is training plus epoch evaluations and test archival, not isolated optimizer time.",
         "final_attempt_elapsed": "complete.json elapsed_seconds covers only the successful final attempt, including its evaluations and post-training analysis. It is not lifetime runtime.",
@@ -565,7 +564,7 @@ def generate(outputs: Path, destination: Path, datasets: tuple[str, ...] = ("bcd
         "These artifacts compare native RGB inputs with frozen ViT features using completed multiclass runs "
         "trained separately for each dataset.\n\n"
         + "```bash\n" + command + "\n```\n\n"
-        + f"`table.tex` supplies Table 5; `figure.tex` supplies Figure {figure_number}. The figure has vector PDF and 600-dpi PNG exports. "
+        + f"`table.tex` supplies manuscript Table 10. `figure.tex` references the generated Figure {figure_number}, exported as manuscript Figure 11 by `reproduce_paper.py`. The figure has vector PDF and 600-dpi PNG exports. "
         + "Initial and selected metrics are independently reconstructed from archived probabilities and categories. "
         + "Seeds reuse the same test images; SD is sample SD across three seeds. Classification checkpoints use validation BA only.\n\n"
         + "`per_run.*`, `grouped.*`, `cohorts.json`, and `confusion_matrices.json` retain numerical inputs. "

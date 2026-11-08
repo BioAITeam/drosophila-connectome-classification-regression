@@ -20,18 +20,7 @@ LEGACY_PATHS = {"outputs": "5 Iris/5 Outputs", "data/processed": "2 Data/3 Proce
                 "ki67/outputs": "6 Ki67/5 Outputs", "10 zenodo": "zenodo", "ZENODO": "zenodo",
                 "9 Documentation": "8 Documentation", "11 temp_intermediate": "9 temp_intermediate",
                 "12 temp": "10 temp"}
-FIGURES = {
-    1: ("5 Iris/5 Outputs/paper-results/revision-20260914T043414Z/Figure-1.pdf", "7 Paper Results/1 Generators/condensed_figures.py"),
-    2: ("5 Iris/5 Outputs/paper-condensed/20260915T014412Z/figures/Figure-2.pdf", "7 Paper Results/1 Generators/condensed_figures.py"),
-    3: ("5 Iris/5 Outputs/paper-condensed/20260915T014412Z/figures/Figure-3.pdf", "7 Paper Results/1 Generators/condensed_figures.py"),
-    4: ("5 Iris/5 Outputs/paper-condensed/20260915T014412Z/figures/Figure-4.pdf", "7 Paper Results/1 Generators/condensed_figures.py"),
-    5: ("5 Iris/5 Outputs/paper-results/figure5-horizontal-20260923T153039Z/Figure-5.pdf", "7 Paper Results/1 Generators/condensed_figures.py"),
-    6: ("5 Iris/5 Outputs/paper-results/figure6-horizontal-20260923T163745Z/Figure-6.pdf", "7 Paper Results/1 Generators/condensed_figures.py"),
-    7: ("6 Ki67/5 Outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-7.pdf", "6 Ki67/2 Source/paper_joint.py"),
-    8: ("6 Ki67/5 Outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-8.pdf", "6 Ki67/2 Source/paper_joint.py"),
-    9: ("6 Ki67/5 Outputs/paper-binary-confusions-combined-20260923T221619Z-v2/Figure-9.pdf", "6 Ki67/2 Source/paper_binary_confusions.py"),
-    10: ("6 Ki67/5 Outputs/paper-rgb-both-datasets-20260924T141711Z-v2/Figure-10.pdf", "6 Ki67/2 Source/paper_rgb.py"),
-}
+FIGURES = {1: ('5 Iris/5 Outputs/paper-schematic/Figure-1.pdf', '7 Paper Results/1 Generators/schematic/build_schematic.py'), 2: ('5 Iris/5 Outputs/paper-results/revision-20260914T043414Z/Figure-1.pdf', '7 Paper Results/1 Generators/condensed_figures.py'), 3: ('5 Iris/5 Outputs/paper-condensed/20260915T014412Z/figures/Figure-2.pdf', '7 Paper Results/1 Generators/condensed_figures.py'), 4: ('5 Iris/5 Outputs/paper-condensed/20260915T014412Z/figures/Figure-3.pdf', '7 Paper Results/1 Generators/condensed_figures.py'), 5: ('5 Iris/5 Outputs/paper-condensed/20260915T014412Z/figures/Figure-4.pdf', '7 Paper Results/1 Generators/condensed_figures.py'), 6: ('5 Iris/5 Outputs/paper-results/figure5-horizontal-20260923T153039Z/Figure-5.pdf', '7 Paper Results/1 Generators/condensed_figures.py'), 7: ('5 Iris/5 Outputs/paper-results/figure6-horizontal-20260923T163745Z/Figure-6.pdf', '7 Paper Results/1 Generators/condensed_figures.py'), 8: ('6 Ki67/5 Outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-7.pdf', '6 Ki67/2 Source/paper_joint.py'), 9: ('6 Ki67/5 Outputs/joint-bcdata-shid-v1/paper/multiclass-pair-spacing-20260923T220944Z/Figure-8.pdf', '6 Ki67/2 Source/paper_joint.py'), 10: ('6 Ki67/5 Outputs/paper-binary-confusions-combined-20260923T221619Z-v2/Figure-9.pdf', '6 Ki67/2 Source/paper_binary_confusions.py'), 11: ('6 Ki67/5 Outputs/paper-rgb-both-datasets-20260924T141711Z-v2/Figure-10.pdf', '6 Ki67/2 Source/paper_rgb.py'), 12: ('6 Ki67/5 Outputs/phikon-joint-finetune/figures/Figure-12.pdf', '6 Ki67/2 Source/phikon_finetuning/render_confusions.py'), 13: ('6 Ki67/5 Outputs/phikon-xai/figures/Figure-13.pdf', '6 Ki67/2 Source/phikon_xai/render.py')}
 
 
 def read_json(path):
@@ -265,7 +254,7 @@ def catalog(root, paper_dir=None):
         entry = {"number": number, "pdf_path": name, "sha256": digest,
                  "png_path": path.with_suffix(".png").relative_to(root).as_posix(),
                  "generator": generator}
-        if number == 1:
+        if number == 2:
             entry["archived_generator"] = "revision_panels.py"
         for manifest in ("provenance.json", "revision-manifest.json"):
             candidate = path.parent / manifest
@@ -277,7 +266,7 @@ def catalog(root, paper_dir=None):
     save_json(within(root, "4 Trained Models/1 Catalogs/figure-provenance.json"), {
         "schema_version": 1, "path_base": "repository root", "figures": figures,
         "matched_supplied_paper_pdfs": bool(paper_dir),
-        "note": "Archived PDFs retain the accepted edition; generators rebuild numerical content without training."})
+        "note": "Archived PDFs match the final manuscript numbering. Generators rebuild numerical content without training."})
     iris = refresh_iris_catalog(root)
     return {**iris, "ki67_models": len(models), "main_paper_classifiers": 120,
             "hashed_resources": len(resources), "figures": len(figures)}
@@ -354,6 +343,35 @@ def verify(root, all_iris=False):
             "iris_hash_sample": sampled if not all_iris else [], "status": "passed"}
 
 
+def verify_release(root):
+    archive = within(root, "zenodo")
+    manifest = read_json(archive / "publication-manifest.json")
+    records = manifest["files"]
+    names = [entry["path"] for entry in records]
+    if len(names) != len(set(names)) or len(names) != manifest["regular_file_count"]:
+        raise ValueError("Publication manifest file count or paths are inconsistent")
+    total = 0
+    for entry in records:
+        name = Path(entry["path"])
+        if name.is_absolute() or ".." in name.parts:
+            raise ValueError("Publication manifest paths must be archive-relative")
+        path = archive / name
+        if path.is_symlink() or not path.resolve().is_relative_to(archive):
+            raise ValueError(f"Unexpected link in regular-file record: {name}")
+        if path.stat().st_size != entry["bytes"] or sha256(path) != entry["sha256"]:
+            raise ValueError(f"Publication checksum mismatch: {name}")
+        total += entry["bytes"]
+    if total != manifest["regular_file_bytes"]:
+        raise ValueError("Publication manifest byte count is inconsistent")
+    for entry in manifest.get("symlinks", []):
+        path = archive / entry["path"]
+        if not path.is_symlink() or os.readlink(path) != entry["target"]:
+            raise ValueError(f"Publication symbolic link mismatch: {entry['path']}")
+        if not path.resolve().is_relative_to(archive):
+            raise ValueError("Publication symbolic link leaves the archive")
+    return {"status": "passed", "files_hashed": len(records), "bytes_hashed": total}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
@@ -365,7 +383,8 @@ def main():
     catalog_parser.add_argument("--paper-dir", type=Path, help="Read-only comparison against the accepted figure PDFs")
     verify_parser = commands.add_parser("verify", help="Verify Ki-67 resources, figure PDFs and Iris checkpoints")
     verify_parser.add_argument("--all-iris", action="store_true", help="Hash all 6,390 Iris checkpoints instead of one per campaign")
-    for command in (inventory_parser, catalog_parser, verify_parser):
+    release_parser = commands.add_parser("verify-release", help="Check every file against the Zenodo publication manifest")
+    for command in (inventory_parser, catalog_parser, verify_parser, release_parser):
         command.add_argument("--save", type=Path, help="Save the report at a repository-relative path")
     args = parser.parse_args()
     root = args.root.expanduser().resolve()
@@ -374,13 +393,15 @@ def main():
         report_path = within(root, args.save)
         protected = ["zenodo", "2 Data/1 Raw", *LINKS]
         if any(report_path.resolve().is_relative_to((root / name).resolve()) for name in protected):
-            raise ValueError("Save reports in Workspace or 10 temp, outside archived artifacts and raw data.")
+            raise ValueError("Save reports in Workspace or 9 temp_intermediate, outside archived artifacts and raw data.")
     if args.command == "link":
         result = link(root)
     elif args.command == "inventory":
         result = inventory(root, args.hash)
     elif args.command == "catalog":
         result = catalog(root, args.paper_dir)
+    elif args.command == "verify-release":
+        result = verify_release(root)
     else:
         result = verify(root, args.all_iris)
     if report_path is not None:

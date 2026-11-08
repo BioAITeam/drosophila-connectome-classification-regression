@@ -140,7 +140,7 @@ def collect(outputs, sources, np):
                   for stat, operation in (("mean", np.mean), ("sd", lambda v: np.std(v, ddof=1)))}
         values["balanced_accuracy_change_pp_mean"] = float(np.mean([r["balanced_accuracy_change_pp"] for r in members]))
         for name, value in values.items():
-            require(abs(value - saved[name]) < 1e-12, f"Table 4 summary mismatch: {name}")
+            require(abs(value - saved[name]) < 1e-12, f"Binary summary mismatch: {name}")
         comparisons.append({"dataset": dataset, "task": task, "graph": graph, **values})
     binary_groups = [r for r in summary if r["task"] in TASKS]
     require(len(binary_groups) == 24 and all(r["balanced_accuracy_change_pp_mean"] > 0 for r in binary_groups),
@@ -289,7 +289,6 @@ def generate(outputs, destination, first_figure_number=9, combined=False):
     destination = prepare_destination(destination)
     os.environ['CUDA_VISIBLE_DEVICES'] = ''
     configure_plot_cache()
-    os.environ['FONTCONFIG_FILE'] = '/etc/fonts/fonts.conf'
     import numpy as np
     sources = Sources(outputs)
     records, matrices, cohorts, comparisons = collect(outputs, sources, np)
@@ -301,6 +300,14 @@ def generate(outputs, destination, first_figure_number=9, combined=False):
     save_json(destination / 'confusion_matrices.json', figures)
     save_json(destination / 'per_run.json', records)
     save_json(destination / 'cohorts.json', cohorts)
+    save_json(destination / 'balanced_accuracy_verification.json', {
+        'representation': 'phikonv2', 'groups': comparisons,
+        'verified_phikon_groups': len(comparisons),
+        'all_binary_configuration_groups': 24,
+        'all_binary_configurations_mean_improvement_positive': True,
+        'summary_source': 'paper/summary.json',
+        'metric_tolerance': {'atol': 1e-12, 'rtol': 0},
+    })
     minority_recalls = []
     for dataset, task, graph in itertools.product(DATASETS, TASKS, GRAPHS):
         members = [r for r in records if (r['dataset'], r['task'], r['graph']) == (dataset, task, graph)]
@@ -325,8 +332,8 @@ def generate(outputs, destination, first_figure_number=9, combined=False):
                           "--destination", portable_path(destination), "--first-figure-number", str(first_figure_number),
                           *(["--combined"] if combined else [])])
     figure_map = (
-        f'Figure {first_figure_number} combines three threshold rows: top PI ≤ 5% / > 5% (A–H), '
-        'middle PI ≤ 10% / > 10% (I–P), and bottom PI < 30% / ≥ 30% (Q–X). '
+        f'Figure {first_figure_number} combines three threshold rows: top PI ≤ 5% / > 5% (A-H), '
+        'middle PI ≤ 10% / > 10% (I-P), and bottom PI < 30% / ≥ 30% (Q-X). '
         'In each row, the first four panels show BCData and the last four show SHIDC-B-Ki-67. '
         'Dataset and graph headings are shared across all rows; one common footer and colorbar applies to all 24 panels.\n\n'
         if combined else
@@ -344,11 +351,11 @@ def generate(outputs, destination, first_figure_number=9, combined=False):
         'Each cell displays mean image count across seeds 1729, 2718, and 3141 on the first line, with mean within-true-class percentage on the second line. '
         'Values are rounded to one decimal where needed, with trailing .0 omitted; stored numerical values retain full precision. '
         'Rows are true classes; columns are predictions. Mean counts retain the original image cohort size; evaluations are not pooled as additional images. '
-        'Fractional counts arise from averaging integer counts across three seeds. Colors encode mean row percentages on a shared 0–100% scale.\n\n'
+        'Fractional counts arise from averaging integer counts across three seeds. Colors encode mean row percentages on a shared 0-100% scale.\n\n'
         '`per_run.json` retains exact counts per seed; `confusion_matrices.json` and `confusion_cells.csv` retain mean counts, percentages, and per-seed counts. '
         '`minority_recall.json` identifies each threshold-specific minority class and retains initial/selected recall per seed, mean, and sample SD. '
         '`balanced_accuracy_verification.json` records the reconstruction of all 12 Phikon-v2 balanced-accuracy summaries '
-        'and the comparison of the broader 24-configuration improvement statement with the Table 4 source summary. '
+        'and the comparison of the broader 24-configuration improvement statement with the archived separate-dataset source summary. '
         'These calculations use the archived predictions, test cohorts, threshold boundaries and validation-selected checkpoints.\n\n'
         'Exports are vector PDFs and 600-dpi PNGs. To regenerate, choose a new destination:\n\n```bash\n' + command + '\n```\n')
     for rel, record in sources.files.items():
@@ -363,7 +370,7 @@ def generate(outputs, destination, first_figure_number=9, combined=False):
                   'n_prediction_archives': 2 * len(records), 'n_panels': 24, 'sources': sources.files,
                   'validation': {'all_sources_unchanged': True, 'all_runs_complete_120_epochs': True,
                                  'test_cohorts_and_threshold_boundaries_verified': True, 'class_order_verified': True,
-                                 'validation_selection_verified': True, 'table_4_ba_summary_verified': True,
+                                 'validation_selection_verified': True, 'binary_ba_summary_verified': True,
                                  'counts_are_means_not_pooled': True, 'no_training_inference_or_checkpoint_loading': True},
                   'outputs': {p.name: {'sha256': digest(p), 'bytes': p.stat().st_size}
                               for p in sorted(destination.iterdir()) if p.is_file()}}

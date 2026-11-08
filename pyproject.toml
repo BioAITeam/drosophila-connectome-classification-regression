@@ -22,6 +22,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+ml = [
+    "xgboost==3.0.0",
+    "joblib==1.5.2",
+    "threadpoolctl==3.6.0",
+    "psutil==7.1.3",
+]
 vision = [
     "transformers>=4.49,<4.50",
     "Pillow>=10,<13",
@@ -29,13 +35,18 @@ vision = [
     "safetensors>=0.4,<1",
 ]
 
+xai = [
+    "shap==0.49.1",
+    "lime==0.2.0.1",
+    "scikit-image==0.26.0",
+]
+
 [project.scripts]
 flybrain = "flybrain.launcher:main"
 
 [tool.setuptools]
-packages = ["flybrain", "ki67"]
+packages = ["flybrain", "ki67", "ki67.ml_baselines", "ki67.phikon_finetuning", "ki67.phikon_xai", "ki67.feature_mapping"]
 
 [tool.setuptools.package-dir]
 flybrain = "3 Connectome/flybrain"
 ki67 = "6 Ki67/2 Source"
-

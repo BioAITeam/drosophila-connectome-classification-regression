@@ -1,4 +1,4 @@
-"""Read image–annotation pairs and derive Ki-67 targets without changing source files.
+"""Read image-annotation pairs and derive Ki-67 targets without changing source files.
 """
 from __future__ import annotations
 
@@ -16,6 +16,14 @@ from .common import REPO, portable_path, read_json, sha256, write_json
 from .tasks import CLASS_NAMES, TASK_NAMES as TASKS
 
 SPLITS = ("train", "val", "test")
+DEFAULT_PARTITION_POLICY = "Original image-level splits are retained; patient independence is not asserted"
+
+
+def partition_policy(specification: dict) -> str:
+    policy = specification.get("partition_policy", DEFAULT_PARTITION_POLICY)
+    if not isinstance(policy, str) or not policy.strip():
+        raise ValueError("partition_policy must be a nonempty string")
+    return policy
 
 
 def resolve_image_path(row: dict) -> Path:
@@ -140,7 +148,7 @@ def inspect_pair(image_path: Path, json_path: Path, dataset: str, split: str,
     return result
 
 
-def _summary(rows: list[dict]) -> dict:
+def _summary(rows: list[dict], policy: str = DEFAULT_PARTITION_POLICY) -> dict:
     split_summary = {}
     for split in SPLITS:
         selected = [row for row in rows if row["split"] == split]
@@ -176,7 +184,7 @@ def _summary(rows: list[dict]) -> dict:
         "split_overlap": overlaps,
         "empty_pi_policy": "PI = 0 when positive_count + negative_count = 0; explicitly marked convention",
         "annotation_policy": "All supplied label 1/2 records are counted, including repeated and out-of-bounds records",
-        "partition_policy": "Original image-level splits are retained; patient independence is not asserted",
+        "partition_policy": policy,
     }
 
 
@@ -185,6 +193,7 @@ def audit(config: dict, output: Path) -> dict:
     output = Path(output)
     summaries = {}
     for dataset, specification in config["datasets"].items():
+        policy = partition_policy(specification)
         root = Path(os.environ.get(f"KI67_{dataset.upper()}_ROOT", specification["root"])).expanduser()
         root = (root if root.is_absolute() else REPO / root).resolve()
         rows = []
@@ -206,7 +215,7 @@ def audit(config: dict, output: Path) -> dict:
                                  f"json_only={sorted(annotations.keys() - images.keys())[:10]}")
             rows.extend(inspect_pair(images[stem], annotations[stem], dataset, split, root)
                         for stem in sorted(images))
-        summary = _summary(rows)
+        summary = _summary(rows, policy)
         summaries[dataset] = summary
         write_json(output / "manifests" / f"{dataset}.json", {
             "schema_version": 1, "dataset": dataset, "source_root": _source_reference(root, dataset),

@@ -11,7 +11,7 @@ Iris experiments evaluate species classification and prediction of each floral m
 | 5 | `5 Outputs/` | Restored paper results and selected models, read-only |
 | 6 | `6 Workspace/` | New campaigns, predictions and numerical summaries |
 
-The [Iris protocol](<../8 Documentation/round4_protocol.md>) describes the 6,390 completed runs, partitions, selection criteria and controls.
+The [Iris protocol](<../8 Documentation/round4_protocol.md>) describes the 6,390 original runs, partitions, selection criteria and controls. The additional [input-assignment experiment](<../8 Documentation/input_assignment.md>) comprises 220 classification fits on the anatomical graph.
 
 ## 1. Prerequisites and inference
 
@@ -51,3 +51,7 @@ Replace `SESSION` in both commands with the directory name printed by the CPU la
 After the full-graph campaign finishes, [aggregate its predictions](<3 Evaluation/README.md>) using its directory as `--sources`.
 
 The supplied plans use the restored graphs. For newly prepared graphs, set `--graph-root` when [generating training plans](<../8 Documentation/benchmark_matrix.md>).
+
+## Topology controls and traditional classifiers
+
+The [topology and classifier guide](<../8 Documentation/topology_controls.md>) covers 30 degree-preserving rewired graphs, 30 random recurrent graphs and 14 traditional classifiers under the same grouped Iris partitions. Saved predictions reproduce the control comparisons and Tables 3 and 15 without retraining.
